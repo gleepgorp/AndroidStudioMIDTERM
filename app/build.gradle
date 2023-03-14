@@ -28,11 +28,15 @@ android {
     }
 }
 
+//adds the rhino-android library to an Android project.
+// allows developers to embed JavaScript code within their Android applications, and execute that code at runtime.
+//doing the heavy lifting on doing the maths
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'io.apisense:rhino-android:1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
