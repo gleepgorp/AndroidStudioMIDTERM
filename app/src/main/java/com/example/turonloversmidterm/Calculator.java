@@ -60,6 +60,9 @@ public class Calculator extends AppCompatActivity {
     }
 
     public void deleteOnClick(View view) {
+        int length = workingsTV.length();
+        workingsTV.setText(workingsTV.getText().subSequence(0, length - 1));
+
     }
 
     public void divideOnClick(View view) {
@@ -67,30 +70,37 @@ public class Calculator extends AppCompatActivity {
     }
 
     public void sevenOnClick(View view) {
+
         setWorkings("7");
     }
 
     public void eightOnClick(View view) {
+
         setWorkings("8");
     }
 
     public void nineOnClick(View view) {
+
         setWorkings("9");
     }
 
     public void multiplyOnClick(View view) {
+
         setWorkings("*");
     }
 
     public void fourOnClick(View view) {
+
         setWorkings("4");
     }
 
     public void fiveOnClick(View view) {
+
         setWorkings("5");
     }
 
     public void sixOnClick(View view) {
+
         setWorkings("6");
     }
 
@@ -99,26 +109,32 @@ public class Calculator extends AppCompatActivity {
     }
 
     public void oneOnClick(View view) {
+
         setWorkings("1");
     }
 
     public void twoOnClick(View view) {
+
         setWorkings("2");
     }
 
     public void threeOnClick(View view) {
+
         setWorkings("3");
     }
 
     public void additionOnClick(View view) {
+
         setWorkings("+");
     }
 
     public void pointOnClick(View view) {
+
         setWorkings(".");
     }
 
     public void zeroOnClick(View view) {
+
         setWorkings("0");
     }
 
