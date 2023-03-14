@@ -67,24 +67,13 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textColor="@color/orange"
-                android:textSize="@dimen/calcButtonTextSize"
                 android:layout_margin="4dp"
-                android:background="@drawable/roundbuttoncalculator"
-                android:onClick="parenthesesOnClick"
-                android:text="( )"/>
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/orange"
-                android:textSize="@dimen/calcButtonTextSize"
-                android:layout_margin="4dp"
                 android:background="@drawable/roundbuttoncalculator"
-                android:onClick="circumflexOnClick"
-                android:text="^"/>
+                android:onClick="deleteOnClick"
+                android:text="Delete"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/calcButtonTextSize" />
 
             <Button
                 android:layout_width="0dp"
