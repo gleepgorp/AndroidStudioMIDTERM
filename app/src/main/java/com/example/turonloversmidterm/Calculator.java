@@ -60,8 +60,11 @@ public class Calculator extends AppCompatActivity {
     }
 
     public void deleteOnClick(View view) {
+
         int length = workingsTV.length();
-        workingsTV.setText(workingsTV.getText().subSequence(0, length - 1));
+        CharSequence newinput = workingsTV.getText().subSequence(0, length - 1);
+        workingsTV.setText(newinput);
+        workings = (String) newinput;
 
     }
 
