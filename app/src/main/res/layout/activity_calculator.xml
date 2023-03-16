@@ -17,28 +17,26 @@
         android:layout_weight="3">
 
         <TextView
+            android:id="@+id/calcNumber"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="10 + 3"
             android:paddingEnd="30dp"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            android:id="@+id/calcNumber"/>
+            android:textSize="30sp" />
 
         <TextView
+            android:id="@+id/calcResult"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="13"
             android:paddingEnd="30dp"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
-            android:textSize="38sp"
-            android:id="@+id/calcResult"/>
+            android:textSize="38sp" />
 
     </LinearLayout>
 
