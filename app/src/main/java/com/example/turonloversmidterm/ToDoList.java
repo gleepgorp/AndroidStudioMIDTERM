@@ -43,14 +43,25 @@ public class ToDoList extends AppCompatActivity {
     }
 
     private void setUpListViewListener() {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                CheckBox checkBox = view.findViewById(R.id.checkBox);
-                checkBox.setChecked(!checkBox.isChecked());
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // Remove the item fro  m the list and update the adapter
+                items.remove(i);
+                itemsAdapter.notifyDataSetChanged();
+
+                // Show a toast to indicate that the item has been deleted
+                Context context = getApplicationContext();
+                CharSequence text = "Item deleted";
+                int duration = Toast.LENGTH_SHORT;
+                Toast.makeText(context, text, duration).show();
+
+                // Return true to indicate that the long press event has been handled
+                return true;
             }
         });
     }
+
 
 
     private void addItem(View view) {

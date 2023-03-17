@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="40dp"
+    android:background="@color/darkgray"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnCalculator"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="230dp"
         android:textStyle="bold"
+        android:backgroundTint="@color/orange"
         android:background="@drawable/round_button"
         android:textSize="15sp"
         android:text="Calculator"
+        android:textColor="@color/offwhite"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +33,8 @@
         android:text="To Do List"
         android:textSize="15dp"
         android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/offwhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
