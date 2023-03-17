@@ -17,6 +17,7 @@
         android:textColor="@color/offwhite"
         android:backgroundTint="@color/offwhite"
         android:text="Name"
+        android:padding= "16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent" />
